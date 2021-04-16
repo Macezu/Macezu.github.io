@@ -2,20 +2,23 @@
 /* Inputs */
 /* Timeline custom component */
 .timeline {
-  border-left: 2px solid #E6E9ED;
-  padding: 1rem 0; }
+  border-left: 2px solid #e6e9ed;
+  padding: 1rem 0;
+}
 
 .timeline-card {
   position: relative;
   margin-left: 31px;
   border-left: 2px solid;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
 
 .timeline-card:last-child {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+}
 
 .timeline-card:before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   background-color: #fff;
@@ -25,10 +28,11 @@
   top: 20px;
   left: -41px;
   border: 2px solid;
-  z-index: 2; }
+  z-index: 2;
+}
 
 .timeline-card:after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   background-color: currentColor;
@@ -36,54 +40,68 @@
   height: 2px;
   top: 25px;
   left: -29px;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .timeline-card-primary {
-  border-left-color: #7dba5c; }
+  border-left-color: #7dba5c;
+}
 
 .timeline-card-primary:before {
-  border-color: #7dba5c; }
+  border-color: #7dba5c;
+}
 
 .timeline-card-primary:after {
-  background-color: #7dba5c; }
+  background-color: #7dba5c;
+}
 
 .timeline-card-success {
-  border-left-color: #7dba5c; }
+  border-left-color: #7dba5c;
+}
 
 .timeline-card-success:before {
-  border-color: #7dba5c; }
+  border-color: #7dba5c;
+}
 
 .timeline-card-success:after {
-  background-color: #7dba5c; }
+  background-color: #7dba5c;
+}
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 .site-title {
   font-size: 1.25rem;
-  line-height: 2.5rem; }
+  line-height: 2.5rem;
+}
 
 .nav-link {
   padding: 0;
   font-size: 1.25rem;
   line-height: 2.5rem;
-  color: white; }
+  color: white;
+}
 
 .nav-link:hover,
 .nav-link:focus,
 .active .nav-link {
-  color: #7dba5c; }
+  color: #7dba5c;
+}
 
 .nav-item + .nav-item {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+}
 
 .cover {
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .cover-bg {
   background-color: #7dba5c;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.12'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  border-radius: 10px 10px 0 0; }
+  border-radius: 10px 10px 0 0;
+}
 
 .avatar {
   max-width: 216px;
@@ -91,91 +109,235 @@ html {
   margin-top: 20px;
   text-align: center;
   margin-left: auto;
-  margin-right: auto; }
-
+  margin-right: auto;
+}
 
 footer a:not(.nav-link) {
   color: inherit;
   border-bottom: 1px dashed;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 @media (min-width: 48em) {
   .site-title {
-    float: left; }
+    float: left;
+  }
   .site-nav {
-    float: right; }
+    float: right;
+  }
   .avatar {
     margin-bottom: -80px;
-    margin-left: 0; } }
+    margin-left: 0;
+  }
+}
 
 @media print {
   body {
-    background-color: #fff; }
+    background-color: #fff;
+  }
   .container {
     width: auto;
     max-width: 100%;
-    padding: 0; }
-  .cover, .cover-bg {
-    border-radius: 0; }
+    padding: 0;
+  }
+  .cover,
+  .cover-bg {
+    border-radius: 0;
+  }
   .cover.shadow-lg {
-    box-shadow: none !important; }
+    box-shadow: none !important;
+  }
   .cover-bg {
     padding: 5rem !important;
-    padding-bottom: 10px !important; }
+    padding-bottom: 10px !important;
+  }
   .avatar {
-    margin-top: -10px; }
+    margin-top: -10px;
+  }
   .about-section {
-    padding: 6.5rem 5rem 2rem !important; }
+    padding: 6.5rem 5rem 2rem !important;
+  }
   .skills-section,
   .work-experience-section,
   .education-section,
   .contant-section {
-    padding: 1.5rem 5rem 2rem !important; }
+    padding: 1.5rem 5rem 2rem !important;
+  }
   .page-break {
     padding-top: 5rem;
-    page-break-before: always; } }
+    page-break-before: always;
+  }
+}
 
-    #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
-      max-width: 1920px;
-      
-    }
-    #portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box {
-      position: relative;
-      display: block;
-    }
-    #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption {
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      bottom: 0;
-      text-align: center;
-      opacity: 0;
-      color: #fff;
-      background: #7dba5c;
-      transition: opacity 0.25s ease;
-      text-align: center;
-    }
-    #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category {
-      font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-    #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
-      font-size: 1.2rem;
-    }
-    #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
-      opacity: 1;
-    }
+#portfolio .container-fluid,
+#portfolio .container-sm,
+#portfolio .container-md,
+#portfolio .container-lg,
+#portfolio .container-xl {
+  max-width: 1920px;
+}
+#portfolio .container-fluid .portfolio-box,
+#portfolio .container-sm .portfolio-box,
+#portfolio .container-md .portfolio-box,
+#portfolio .container-lg .portfolio-box,
+#portfolio .container-xl .portfolio-box {
+  position: relative;
+  display: block;
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption,
+#portfolio .container-md .portfolio-box .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: #7dba5c;
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+#portfolio
+  .container-fluid
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-sm
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-md
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-lg
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-xl
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-md .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-md .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+/* CAROUSEL */
+#logoSlider {
+  position: relative;
+  border: 1px solid black;
+}
+@media (max-width: 767px) {
+  #logoSlider {
+    border-color: transparent;
+  }
+}
+#logoSlider .MS-content {
+  /* margin: 15px 5%; */
+  overflow: hidden;
+  white-space: nowrap;
+  border: 1px solid #7dba5c;
+}
+@media (max-width: 767px) {
+  #logoSlider .MS-content {
+    margin: 0;
+  }
+}
+#logoSlider .MS-content .item {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  vertical-align: center;
+  border-right: none;
+  width: 20%;
+}
+@media (max-width: 1200px) {
+  #logoSlider .MS-content .item {
+    width: 20%;
+  }
+}
+@media (max-width: 992px) {
+  #logoSlider .MS-content .item {
+    width: 33.3333%;
+  }
+}
+@media (max-width: 767px) {
+  #logoSlider .MS-content .item {
+    width: 50%;
+  }
+}
+#logoSlider .MS-content .item img {
+  height: 100%;
+  margin: 0;
+  padding: 10px 0;
+}
+#logoSlider .MS-controls button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  outline: 0;
+  top: 35px;
+}
+@media (max-width: 767px) {
+  #logoSlider .MS-controls button {
+    display: none;
+  }
+}
+#logoSlider .MS-controls button:hover {
+  cursor: pointer;
+}
+#logoSlider .MS-controls .MS-left {
+  left: 10px;
+}
+@media (max-width: 992px) {
+  #logoSlider .MS-controls .MS-left {
+    left: -2px;
+  }
+}
+#logoSlider .MS-controls .MS-right {
+  right: 10px;
+}
+@media (max-width: 992px) {
+  #logoSlider .MS-controls .MS-right {
+    right: -2px;
+  }
+}
 
 
 
-  .bg-secondary {
-    background-color: #7dba5c !important; } 
 
-  
+.bg-secondary {
+  background-color: #7dba5c !important;
+}
