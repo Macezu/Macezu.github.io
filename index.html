@@ -32,7 +32,7 @@
     </noscript>
   </head>
   <body class="bg-dark" id="top">
-    
+<!-- #region header -->
     <header class="d-print-none">
       <div class="container text-center text-lg-left">
         <div class="py-3 clearfix">
@@ -69,6 +69,8 @@
       </div>
     </div>
   </div>
+<!-- #endregion -->
+<!-- #region minusta -->
   <div class="about-section pt-4 px-3 px-lg-4 mt-1">
     <div class="row">
       <div class="col-md-6">
@@ -107,6 +109,8 @@
       </div>
     </div>
   </div>
+<!-- #endregion -->
+<!-- #region Kielet -->
   <hr class="d-print-none"/>
   <div class="skills-section px-3 px-lg-4">
     <h2 class="h3 mb-3 border-radius">Ohjelmointikielet</h2>
@@ -147,7 +151,8 @@
       </div>
     </div>
   </div>
-  <!-- Tekniikkani -->
+<!-- #endregion -->
+<!--#region Tekniikkani -->
   <hr class="d-print-none"/>
     <h2 class="h3 mb-3 border-radius px-3 px-lg-4">Tekniikat ja Ohjelmat</h2>
     <div id="logoSlider" class="bg-dark">
@@ -199,8 +204,8 @@
           </div>
       </div>
   </div>
-      
-  <!-- Portfolio-->
+<!-- #endregion -->
+<!--#region Portfolio-->
   <hr class="d-print-none"/>
   <div class="px-3 px-lg-4" id="portfolio">
     <h2 class="h3 mb-4">Projektit</h2>
@@ -263,7 +268,8 @@
         </div>
     </div>
 </div>
-<!-- TYÖKOKEMUS -->
+<!-- #endregion -->
+<!--#region TYÖKOKEMUS -->
   <hr class="d-print-none"/>
   <div class="work-experience-section px-3 px-lg-4">
     <h2 class="h3 mb-4">Työkokemus</h2>
@@ -291,6 +297,8 @@
       </div>
     </div>
   </div>
+  <!-- #endregion -->
+<!-- #region Education -->
   <hr class="d-print-none"/>
   <div class="page-break"></div>
   <div class="education-section px-3 px-lg-4 pb-4">
@@ -319,6 +327,8 @@
     </div>
   </div>
   <hr class="d-print-none"/>
+    <!-- #endregion -->
+<!-- #region contact -->
   <div class="contant-section px-3 px-lg-4 pb-4" id="contact">
     <h2 class="h3 text mb-3">Ota Yhteyttä</h2>
     <div class="row">
@@ -374,8 +384,12 @@
       </div>
     </div>
   </div>
-</div></div>
-    </div>
+  <!-- #endregion -->
+  </div>
+  </div>  
+</div>
+
+<!-- #region footer -->
     <footer class="pt-4 pb-4 text-muted text-center d-print-none">
       <div class="container">
         <div class="my-3">
@@ -401,18 +415,42 @@
         </div>
       </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="scripts/aos.js?ver=1.2.0"></script>
-    <script src="scripts/main.js?ver=1.2.0"></script>
+<!-- #endregion -->
+<!-- #region scripts  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+  <script src="scripts/aos.js?ver=1.2.0"></script>
+  <script src="scripts/main.js?ver=1.2.0"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCnJDszj7sWdi6ZB2XvgZPbQ-Tyja9kSgg",
+      authDomain: "portfolio-47ef5.firebaseapp.com",
+      projectId: "portfolio-47ef5",
+      storageBucket: "portfolio-47ef5.appspot.com",
+      messagingSenderId: "500923910763",
+      appId: "1:500923910763:web:2772bc91b6d7029436ff2e",
+      measurementId: "G-0147T3K3RR"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 
     <!-- Include jQuery, then include Multislider script -->
     <script src="/js/jquery-2.2.4.min.js"></script>
     <script src="/js/multislider.min.js"></script>
-
- 
-   <!-- Initialize with options, if needed -->
    <script>
     $('#logoSlider').multislider({
       continuous: true,
@@ -429,5 +467,6 @@
         backSpeed : 30
       });
     </script>
+<!-- #endregion -->
   </body>
 </html>
