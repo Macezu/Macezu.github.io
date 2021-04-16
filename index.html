@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -17,11 +19,11 @@
     <link href="css/main.css?ver=1.2.0" rel="stylesheet">
     <!-- IE 10+ "Metro" Tiles - 144x144 pixels in size icon should be transparent -->
     <meta name="msapplication-TileColor" content="#D83434">
-    <meta name="msapplication-TileImage" content="/images/icons/favicon-144.png">
+    <meta name="msapplication-TileImage" content="/assets/img/icons/favicon-144.png">
     <!-- Touch Icons - iOS and Android 2.1+ 152x152 pixels in size. --> 
-    <link rel="apple-touch-icon-precomposed" href="/images/icons/favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/icons/favicon-152.png">
     <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 96x96 pixels in size. -->
-    <link rel="icon" href="/images/icons/favicon-96.png">
+    <link rel="icon" href="/assets/img/icons/favicon-96.png">
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -60,7 +62,7 @@
   <div class="cover-bg p-3 p-lg-4 text-black">
     <div class="row">
       <div class="col-lg-4 col-md-5">
-        <div class="avatar hover-effect bg-dark shadow-sm p-1"><img src="images/mina.jpg" width="200" height="200"/></div>
+        <div class="avatar hover-effect bg-dark shadow-sm p-1"><img src="/assets/img/mina.jpg" width="200" height="200"/></div>
       </div>
       <div class="col-lg-8 col-md-7 text-center text-md-start typed-headline">
         <h2 class="h1 mt-2 h4 inline-block" data-aos="fade-left" data-aos-delay="0">Marco Peciola</h2>
@@ -425,8 +427,7 @@
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!-- https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
@@ -445,9 +446,23 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+    db = firebase.firestore()    
   </script>
-
+    <script>
+      function castVote (event) {
+        console.log("Jes")
+        event.preventDefault()
+        db.collection("votes").add({
+          vote: vote,
+        })
+        .then((docRef) => {
+          console.log("Document written with ID: ", docRef.id);
+        })
+        .catch((error) => {
+          console.error("Error adding document: ", error);
+        });
+      }
+    </script>
     <!-- Include jQuery, then include Multislider script -->
     <script src="/js/jquery-2.2.4.min.js"></script>
     <script src="/js/multislider.min.js"></script>
