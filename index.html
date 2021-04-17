@@ -67,7 +67,7 @@
       <div class="col-lg-8 col-md-7 text-center text-md-start typed-headline">
         <h2 class="h1 mt-2 h4 inline-block" data-aos="fade-left" data-aos-delay="0">Marco Peciola</h2>
         <p data-aos="fade-left" data-aos-delay="200">I'm a <span class="element fs-5"></span></p>
-        <div class="d-print-none" data-aos="fade-left" data-aos-delay="200"><a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="/Marco PeciolaCV(English).docx" target="_blank">Lataa CV</a><a class="btn btn-dark shadow-sm mt-1" href="#contact">Try & Hire</a></div>
+        <div class="d-print-none" data-aos="fade-left" data-aos-delay="200"><a class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="addCount(`cv`)" href="/Marco PeciolaCV(English).docx" target="_blank">Lataa CV</a><a class="btn btn-dark shadow-sm mt-1" href="#contact">Try & Hire</a></div>
         <!-- <button onClick="castVote()">Paina</button> -->
       </div>
     </div>
@@ -311,14 +311,14 @@
         <div class="card-body">
           <div class="h5 mb-1">Tieto- ja viestintätekniikka, Insinööri (AMK) <span class="text-muted h6">HAMK</span></div>
           <div class="text-muted text-small mb-2">2019 - Meneillään</div>
-          <div><a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="/OpintosuoriteHAMK.pdf" target="_blank">Lataa Opintosuorite</a></div>
+          <div><a class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="addCount(`hamk`)" href="/OpintosuoriteHAMK.pdf" target="_blank">Lataa Opintosuorite</a></div>
         </div>
       </div>
       <div class="timeline-card timeline-card-success card shadow-sm">
         <div class="card-body">
           <div class="h5 mb-1">Avoin Yliopisto <span class="text-muted h6">Helsingin Yliopisto</span></div>
           <div class="text-muted text-small mb-2">2019 - Meneillään</div>
-          <div><div><a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="/PeciolaHYOpintosuorite.pdf" target="_blank">Lataa Opintosuorite</a></div></div>
+          <div><div><a class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="addCount(`hy`)" href="/PeciolaHYOpintosuorite.pdf" target="_blank">Lataa Opintosuorite</a></div></div>
         </div>
       </div>
       <div class="timeline-card timeline-card-success card shadow-sm">
@@ -421,49 +421,49 @@
 <!-- #endregion -->
 <!-- #region scripts  -->
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-  <script src="scripts/aos.js?ver=1.2.0"></script>
-  <script src="scripts/main.js?ver=1.2.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+<script src="scripts/aos.js?ver=1.2.0"></script>
+<script src="scripts/main.js?ver=1.2.0"></script>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-  <!-- https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCnJDszj7sWdi6ZB2XvgZPbQ-Tyja9kSgg",
+    authDomain: "portfolio-47ef5.firebaseapp.com",
+    projectId: "portfolio-47ef5",
+    storageBucket: "portfolio-47ef5.appspot.com",
+    messagingSenderId: "500923910763",
+    appId: "1:500923910763:web:2772bc91b6d7029436ff2e",
+    measurementId: "G-0147T3K3RR",
+    databaseURL: "https://portfolio-47ef5-default-rtdb.firebaseio.com/"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  db = firebase.firestore()   
 
-  <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-      apiKey: "AIzaSyCnJDszj7sWdi6ZB2XvgZPbQ-Tyja9kSgg",
-      authDomain: "portfolio-47ef5.firebaseapp.com",
-      projectId: "portfolio-47ef5",
-      storageBucket: "portfolio-47ef5.appspot.com",
-      messagingSenderId: "500923910763",
-      appId: "1:500923910763:web:2772bc91b6d7029436ff2e",
-      measurementId: "G-0147T3K3RR"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    db = firebase.firestore()    
-  </script>
-    <script>
-      function castVote (event) {
-        console.log("Jes")
-        event.preventDefault()
-        db.collection("votes").add({
-          vote: vote,
-        })
-        .then((docRef) => {
-          console.log("Document written with ID: ", docRef.id);
-        })
-        .catch((error) => {
-          console.error("Error adding document: ", error);
-        });
-      }
-    </script>
+</script>
+
+<script>
+  function addCount (type) {
+    firebase.database()
+    .ref(`counter/${type}`)
+    .set(firebase.database.ServerValue.increment(1))
+  }    
+
+</script>
+<script>
+  
+</script>
+
     <!-- Include jQuery, then include Multislider script -->
     <script src="/js/jquery-2.2.4.min.js"></script>
     <script src="/js/multislider.min.js"></script>
