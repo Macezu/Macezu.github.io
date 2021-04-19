@@ -42,7 +42,7 @@
           <div class="site-nav">
             <nav role="navigation">
               <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/marco-peciola/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a>
+                <li class="nav-item"><a class="nav-link" onclick="addToLog(`linkedInClicked`)" href="https://www.linkedin.com/in/marco-peciola/" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="https://play.google.com/store/apps/dev?id=7048658136814874610&hl=en_US&gl=US" title="Google Play"><i class="fab fa-google-play"></i><span class="menu-title sr-only">Google Play</span></a>
                 </li>
@@ -449,7 +449,14 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
   db = firebase.firestore()   
+</script>
 
+  
+<script>
+  function addToLog (type) {    
+    console.log("Clicked")
+    firebase.analytics().logEvent(type);
+  }
 </script>
 
 <script>
